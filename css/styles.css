@@ -1,0 +1,26 @@
+.choose{
+    color:hotpink;
+    text-align: center;
+    text-shadow:black;
+}
+body{
+    background-image: url(two.jpeg);
+}
+.red{
+    color: coral;
+    text-align: center;
+}
+#tOP{
+    text-align: center;
+    color: cornsilk;
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+}
+.toppings{
+    text-align: center;
+    color: hotpink;
+}
+#pepa{
+    padding-top: 1%;
+}
