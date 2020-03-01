@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $("#additions").click(function() {
-        $("#additions").show();
-        
+    $("#PICK SMALL").onclick(function() {
+        $("#crust").show();
+
     });
 });
