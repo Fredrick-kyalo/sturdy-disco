@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width">
     <title>PIZZARO/Excellence personified</title>
 
-    <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -36,10 +35,10 @@
                             <a class="nav-link" href="#Home">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Location">Location</a>
+                            <!-- <a class="nav-link" href="">Location</a> -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#toppings">TOPPINGS</a>
+                            <a class="nav-link" href="#additions">Toppings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#tOP">CRUSTS</a>
@@ -51,139 +50,162 @@
         </div>
     </div>
     <div id="Home">
-        <p>The Pizzaro hut offers a wide range of delicacies.We believe that the customer is always right.COME EAT WITH
-            US!</p>
+        <img src="index.png">
+        <p class="blue">The Pizzaro hut offers a wide range of delicacies.We believe that the customer is always
+            right.COME EAT WITH
+            US!.We are located at Tokiba avenue in the great city of Machakos.This valentine you can't just lay
+            low.Order Online for you and your loved one.COME ON DOWN AND ENJOY.</p>
+
     </div>
-    <div id="Location">
-        <p>We are located at Tokiba avenue in the great city of Machakos </p>
-    </div>
-    <img src="index.png">
+
     <div class="container">
+        <div class="container-fluid">
 
-        <p class="choose">PLEASE CHOOSE YOUR PIZZA SIZE.</p>
+
+            <h3>PLACE YOUR ORDER HERE</h3>
+            <p class="choose">PLEASE CHOOSE YOUR PIZZA SIZE.</p>
 
 
+
+
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="SMALL.jpeg" alt=""><br></p>
+                        <P>Small</p>
+                        <p class="red">ksh500/=</p>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                       
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <img src="MEDIUM.jpeg" alt=""><br></p>
+                        Medium
+                        <p class="Medium"><span>ksh</span><span name=amonut>600</span>=</p>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                        
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="LARGE.jpeg" alt=""><br></p>
+                        large size
+                        <p class="large">ksh800/=</p>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
+    <div id="additions">
+        <h3 class="toppings">Toppings</h3>
         <div class="card">
-            <div class="col-md-4">
-                <img src="SMALL.jpeg" alt=""><br></p>
-                <P>Small</p>
-                <p class="red">ksh500/=</p>
-                <input type="radio">
-            </div>
-        </div>
-        <div class="card">
-            <div class="col-md-4">
-                <img src="MEDIUM.jpeg" alt=""><br></p>
-                Medium
-                <p class="Medium">ksh600/=</p>
-                <input type="radio">
-            </div>
-        </div>
-        <div class="card">
-            <div class="col-md-4">
-                <img src="LARGE.jpeg" alt=""><br></p>
-                large size
-                <p class="large">ksh800/=</p>
-                <input type="radio">
-            </div>
-        </div>
-    </div>
-    </div>
-    
-    
-<h3 class="toppings">Toppings</h3>
-<div class="card">
-    <div id="toppings">
-          <div class = "row">
-              
-              <div class="col-md-4">
-            <img src="olivestopping.jpg" width="350px">
-            <label>OLIVE TOPPING</label>
-            <h4>ADD:200/=</h4>
-              </div>
-        
-            <div class="col-md-4">
-           <img src="mushrooms.jpg"width="350px">
-           <label> MUSHROOM</label>
-           <h4>ADD:200/=</h4>
-        </div>
-    
-    
-        <div class="col-md-4">
-            <img src="Ham.jpg"width = "350px">
-            <label>HAM TOPPING</label>
-            <h4>ADD:200/=</h4>
-        </div>
-    
-        <div class="col-md-4">
-            <img src="pineaplletopping.jpg" width = "350px">
-            <label>PINEAPPLE</label>
-            <h4>ADD:200/=</h4>
-        </div>
-    
-    
-        <div class="col-md-4">
-           <img src="pperonitopping.jpg" width="350px">
-           <label> PEPPERONI</label>
-           <h4>ADD:200/=</h4>
-    </div>
-        <div class="col-md-4">
-            <div id="pepa">
-            <img src="peppertopping.jpg" width="350px">
-            <label>PEPPER</label>
-            <h4>ADD:200/=</h4>
-        </div>
-        </div>
-    </div>
-        
-</div>
-    </div>
-</div>
-</div><h2 id="tOP">CRUSTS</h2>
-    
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-    <div class="col-md-2">
-        <img src="crispy.jpeg" alt=""><br></p>
-        crispy
-        <input type="radio">
-    </div>
-</div>
-<div class="card">
+            <div id="toppings">
+                <div class="row">
 
-    <div class="card-body">
-    <div class="col-md-3">
-        stuffed crust
-        <img src="stuffed.jpeg" alt=""><br></p>
-        <input type="radio">
-    </div>
-</div>
-</div>
-<div class="card">
-    <div class="card-body">
-    <div class="col-md-3">
-        sicilian crust
-        <img src="sicilian.webp"height ="240" alt=""><br></p>
-        <input type="radio">
-    </div>
-</div>
-</div>
-</div>
-        <div class="card">
-            <div class="card-body">
-            <div class="col-md-3">
-                Gluten free
-                <img src="glutenfree.jpeg" alt=""><br></p>
-                <input type="radio">
-            </div>
+                    <div class="col-md-4">
+                        <img src="olivestopping.jpg" width="350px">
+                        <label>OLIVE TOPPING</label>
+                        <h4>ADD:200/=</h4>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="mushrooms.jpg" width="350px">
+                        <label> MUSHROOM</label>
+                        <h4>ADD:200/=</h4>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <img src="Ham.jpg" width="350px">
+                        <label>HAM TOPPING</label>
+                        <h4>ADD:200/=</h4>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="pineaplletopping.jpg" width="350px">
+                        <label>PINEAPPLE</label>
+                        <h4>ADD:200/=</h4>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <img src="pperonitopping.jpg" width="350px">
+                        <label> PEPPERONI</label>
+                        <h4>ADD:200/=</h4>
+                        <button type="button" class="btn btn-outline-danger">ADD</button>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="pepa">
+                            <img src="peppertopping.jpg" width="350px">
+                            <label>PEPPER</label>
+                            <h4>ADD:200/=</h4>
+                            <button type="button" class="btn btn-outline-danger">ADD</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    
-</div>
-</div>
-</div>
+    </div>
 
+    </div>
+    </div>
+    </div>
+    <h2 id="tOP">CRUSTS</h2>
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="glutenfree.jpeg" width="340px" height="200px">
+                    <label>Gluten-free</label>
+                    <h4>ADD:200/=</h4>
+                    <button type="button" class="btn btn-outline-danger">ADD</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="sicilian.jpeg" width="340px" height="200px">
+                    <label>Sicilian</label>
+                    <h4>ADD:200/=</h4>
+                    <button type="button" class="btn btn-outline-danger">ADD</button>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="crispy.jpeg" width="340px" height="200px">
+                    <label>Crispy</label>
+                    <h4>ADD:200/=</h4>
+                    <button type="button" class="btn btn-outline-danger">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <p>Place your order here.</p>
+        <button type="button" class="btn btn-outline-success">PLACE ORDER</button>
+    </div>
+    <div class="anotherone">
+        <p>Do you want to place another?</p>
+        <button type="button" class="btn btn-outline-success">ORDER ANOTHER</button>
+    </div>
+    <div class="checkout">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-2">
+
+                    <button type="button" class="btn btn-outline-dark">CHECKOUT-PRICE</button>
+                    <input type="text" class="form-control" placeholder="Total charge">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
+</html>
