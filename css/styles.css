@@ -1,52 +1,17 @@
-.choose{
-    color:hotpink;
-    text-align: center;
-    text-shadow:black;
+
+h1{
+    color: blueviolet;
+    font-weight: bolder;
+}
+p{
+    color:lawngreen;
+    font-weight: 700;
+    font-style: italic;
+}
+h3{
+    color:navajowhite;
+    font-weight: bolder;
 }
 body{
-    background-image: url();
-}
-.red{
-    color: coral;
-    text-align: center;
-}
-#tOP{
-    text-align: center;
-    color: blue;
-    font-style: italic;
-    font-size: medium;
-    font-weight: bold;
-    display: none;
-}
-.toppings{
-    text-align: center;
-    color: hotpink;
-}
-#pepa{
-    padding-top: 1%;
-}
-.card{
-    background-color: navajowhite;
-}
-#Home{
-    background-color: hotpink;
-    background-image: url(tmnt.jpg);
-    padding-top: 47%;
-}
-.blue{
-    text-align: center;
-    color: black;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.order{
-    text-align: center;
-}
-.anotherone{
-    text-align: center;
-    padding-top: 6%;
-}
-.checkout{
- color: olivedrab;
+    background-image: url(pix.jpg);
 }

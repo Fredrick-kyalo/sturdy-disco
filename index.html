@@ -1,259 +1,94 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta charset="utf-8">
-    <meta name="Generator" content="Drupal 7 (http://drupal.org)">
-    <meta name="viewport" content="width=device-width">
-    <title>PIZZARO/Excellence personified</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzaro</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-
-
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
+    <div class="jumbotron">
+        <div id="home">
+            <h1>MIKEY'S PIZZERIA.</h1>
 
 
+            <div class="container">
+                <form name="form" id="form">
+                    <img src="logo.jpg">
+                    <p class="">CHOOSE THE BEST FOR YOU!</p>
+                    <h3>SIZE </h3>
 
-    <div class="container">
-        <div class="jumbotron">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#!">PIZZARO</a>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#Home">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <!-- <a class="nav-link" href="">Location</a> -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#additions">Toppings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tOP">CRUSTS</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
-    </div>
-    <div id="Home">
-        <img src="index.png">
-        <p class="blue">The Pizzaro hut offers a wide range of delicacies.We believe that the customer is always
-            right.COME EAT WITH
-            US!.We are located at Tokiba avenue in the great city of Machakos.This valentine you can't just lay
-            low.Order Online for you and your loved one.COME ON DOWN AND ENJOY.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="SMALL.jpeg" alt=""><br></p>
-                    <P>Small</p>
-                    <p>ksh500/=</p>
-                    </div>
-                </div>
+                    <p><img src="SMALL.jpeg"></p>
+                    <label>SMall<label>
+                            <img src="MEDIUM.jpeg">
+                            <label>Medium</label>
+                            <img src="LARGE.jpeg">
+                            <label>Large</label>
+                            <select class="form-control form-control-md" id="size">
+                                <option selected value="0">Select size</option>
+                                <option value="Small">Small @Ksh400</option>
+                                <option value="Medium">Medium @Ksh650</option>
+                                <option value="Large">Large @Ksh1000</option>
+                            </select>
 
 
-                <div class="col-md-4">
-                    <img src="MEDIUM.jpeg" alt=""><br></p>
-                    Medium
-                    <p class="Medium"><span>ksh</span><span name=amount>600</span></p>
-                   
-                </div>
+                            <div class="card">
 
-                <div class="col-md-4">
-                    <img src="LARGE.jpeg" alt=""><br></p>
-                    large size
-                    <p class="large">ksh800/=</p>
-                    
+                                <h3>CRUST</h3>
 
-                </div>
+                                <select class="form-control form-control-lg-6" id="crust">
+                                    <option selected value="0">Select crust</option>
+                                    <option value="Crispy">Crispy @Ksh400</option>
+                                    <option value="Stuffed">Stuffed @Ksh450</option>
+                                    <option value="Gluten-free">Gluten-free @Ksh500</option>
+                                </select>
+                                <img src="crispy.jpeg">
+                                <label>CRISPY</label>
+                                <img src="sicilian.jpeg">
+                                <label>SICILIAN</label>
+                                <img src="glutenfree.jpeg">
+                                <label>GLUTEN FREE</label>
+
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <h3>TOPPINGS</h3>
+                                        <select name="topping" class="form-control" id="toppings">
+                                            <option value="0">Select yout topping</option>
+                                            <option value="">sausage @Ksh500</option>
+                                            <option value="onion">Pepperoni @Ksh580</option>
+                                            <option value="sausage">Tomato @Ksh570</option>
+                                            <option value="mushroom">Mushroom @Ksh520</option>
+                                            <option value="onion">Onion @Ksh500</option>
+                                            <option value="Berbecue sauce">Berbecue sauce @Ksh400</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="delivered">
+                                <h3>ADDRESS</h3>
+
+                                <input type="text" class="form-control" name="Estate" id="estate"
+                                    placeholder="Estate"><br>
+                                <input type="text" class="form-control" name="PhoneNumber" id="phoneNumber"
+                                    placeholder="Phone Number"><br>
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-outline-success"
+                                value="checkout">Checkout</button>
+                            <button type="submit" id="submit" class="btn btn-warning" value="Submit">ORDER
+                                ANOTHER</button>
+                </form>
             </div>
         </div>
-    </div>
-</div>
-<div id="additions">
-    <h3 class="toppings">Toppings</h3>
-    <div class="card">
-        <div id="toppings">
-            <div class="row">
 
-                <div class="col-md-4">
-                    <img src="olivestopping.jpg" width="350px">
-                    <label>OLIVE TOPPING</label>
-                    <h4>ADD:200/=</h4>
-                    
-                </div>
-
-                <div class="col-md-4">
-                    <img src="mushrooms.jpg" width="350px">
-                    <label> MUSHROOM</label>
-                    <h4>ADD:200/=</h4>
-                    
-                </div>
-
-
-                <div class="col-md-4">
-                    <img src="Ham.jpg" width="350px">
-                    <label>HAM TOPPING</label>
-                    <h4>ADD:200/=</h4>
-                    
-                </div>
-
-                <div class="col-md-4">
-                    <img src="pineaplletopping.jpg" width="350px">
-                    <label>PINEAPPLE</label>
-                    <h4>ADD:200/=</h4>
-                   
-                </div>
-
-
-                <div class="col-md-4">
-                    <img src="pperonitopping.jpg" width="350px">
-                    <label> PEPPERONI</label>
-                    <h4>ADD:200/=</h4>
-                    
-                </div>
-                <div class="col-md-4">
-                    <div id="pepa">
-                        <img src="peppertopping.jpg" width="350px">
-                        <label>PEPPER</label>
-                        <h4>ADD:200/=</h4>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-</div>
-    <h2 id="tOP">CRUSTS</h2>
-    <div class="container">
-        <div class="card">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="glutenfree.jpeg" width="340px" height="200px">
-                    <label>Gluten-free</label>
-                    <h4>ADD:200/=</h4>
-                    
-                </div>
-                <div class="col-md-4">
-                    <img src="sicilian.jpeg" width="340px" height="200px">
-                    <label>Stuffed</label>
-                    <h4>ADD:200/=</h4>
-                   
-                </div>
-
-                <div class="col-md-4">
-                    <img src="crispy.jpeg" width="340px" height="200px">
-                    <label>Crispy</label>
-                    <h4>ADD:200/=</h4>
-                    
-                </div>
-            </div>
-        </div>
-    
-</div>
-<div class="order">
-    <p>Place your order here.</p>
-    <button type="button" class="btn btn-outline-success">PLACE ORDER</button>
-</div>
-<div class="anotherone">
-    <p>Do you want to place another?</p>
-    <button type="button" class="btn btn-outline-success">ORDER ANOTHER</button>
-</div>
-<div class="checkout">
-    <div class="card">
-        <div class="row">
-            <div class="col-md-2">
-
-                <button type="button" class="btn btn-outline-dark">CHECKOUT-PRICE</button>
-                <input type="text" class="form-control" placeholder="Total charge">
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="container-fluid">
-
-
-            <h3>PLACE YOUR ORDER HERE</h3>
-            <p class="choose">PLEASE CHOOSE YOUR PIZZA SIZE.</p>
-
-
-
-
-            <div class="card">
-                <form action="/action_page.php" id="form1">
-                    <label for="fname">PIZZA SIZE:</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <input type="submit" value="Submit">
-                  </form>
-                  
-                  
-                  <form action="" id="mm">
-                    <br>
-                      <label for="select">Select Your Flavor!</label>
-                      <select class="browser-default custom-select custom-select-md mb-3 name"></select>
-                        <option value="OLIVE TOPPING">OLIVE TOPPING</option>
-                        <option value="MUSHROOM">MUSHROOM</option>
-                        <option value="HAM TOPPING">HAM TOPPING</option>
-                        <option value="PINEAPPLE">PINEAPPLE</option>
-                        <option value=" PEPPERONI"> PEPPERONI</option>
-                        <option value="PEPPER">PEPPER</option>
-                      </select><br>
-                    <label for="select">Select Size!</label>
-                    <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                      <option selected value="0">Select size here</option>
-                      <option value="large">Large -- sh. 900</option>
-                      <option value="medium">Medium -- sh. 750</option>
-                      <option value="small">Small -- sh. 500</option>
-                    </select><br>
-                    <label for="crust">Choose your favorite Crust!</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                          <option selected value="0">Select your preferred crust!</option>
-                      
-                        <option value="Gluten-free">Gluten-free-- sh. 180</option>
-                        <option value="Stuffed">Stuffed -- sh. 150</option>
-                        <option value="Crispy">Crispy -- sh. 100</option>
-                      </select><br>
-                    <label for="Toppings">Select Your Toppings at sh. 200 each!</label><br>
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-                        <label class="custom-control-label" for="Sausage">Sausage</label>
-                      </div>
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-                        <label class="custom-control-label" for="Bacon">Bacon</label>
-                      </div>
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                        <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-                      </div>
-                      <br><br>
-                    <button type="submit" class="btn btn-outline-success proceed">Proceed</button>
-                  </form>
-                </div>
-                
-        </div>
 
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
