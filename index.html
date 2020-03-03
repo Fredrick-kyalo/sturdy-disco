@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pizzaro</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css"rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-        
+
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div id="home">
             <h1>MIKEY'S PIZZERIA.</h1>
             <p>come eat <br>
-            with us</p>
+                with us</p>
 
 
             <div class="container">
@@ -26,73 +26,71 @@
                     <img src="logo.jpg">
                     <p class="">CHOOSE THE BEST FOR YOU!</p>
                     <h3>SIZE </h3>
-
+                    
                     <p><img src="SMALL.jpeg"></p>
-                    <label>SMall<label>
-                            <img src="MEDIUM.jpeg">
-                            <label>Medium</label>
-                            <img src="LARGE.jpeg">
-                            <label>Large</label>
-                            <select class="form-control form-control-md" id="size">
-                                <option selected value="0">Select size</option>
-                                <option value="Small">Small @Ksh400</option>
-                                <option value="Medium">Medium @Ksh650</option>
-                                <option value="Large">Large @Ksh1000</option>
-                            </select>
+
+                    <img src="MEDIUM.jpeg">
+                    <label>Medium</label>
+                    <img src="LARGE.jpeg">
+                    <label>Large</label>
+                    <select class="form-control form-control-md" id="size">
+                        <option selected value="0">Select size</option>
+                        <option value="Small">Small @Ksh400</option>
+                        <option value="Medium">Medium @Ksh650</option>
+                        <option value="Large">Large @Ksh1000</option>
+                    </select>
 
 
-                            <div class="card">
+                    <div class="card">
 
-                                <h3>CRUST</h3>
+                        <h3>CRUST</h3>
 
-                                <select class="form-control form-control-lg-6" id="crust">
-                                    <option selected value="0">Select crust</option>
-                                    <option value="Crispy">Crispy @Ksh400</option>
-                                    <option value="Stuffed">Stuffed @Ksh450</option>
-                                    <option value="Gluten-free">Gluten-free @Ksh500</option>
+                        <select class="form-control form-control-lg-6" id="crust">
+                            <option selected value="0">Select crust</option>
+                            <option value="Crispy">Crispy @Ksh400</option>
+                            <option value="Stuffed">Stuffed @Ksh450</option>
+                            <option value="Gluten-free">Gluten-free @Ksh500</option>
+                        </select>
+                        <img src="crispy.jpeg">
+                        <label>CRISPY</label>
+                        <img src="sicilian.jpeg">
+                        <label>SICILIAN</label>
+                        <img src="glutenfree.jpeg">
+                        <label>GLUTEN FREE</label>
+
+                        <div class="col-6">
+                            <div class="form-group">
+                                <h3>TOPPINGS</h3>
+                                <select name="topping" class="form-control" id="toppings">
+                                    <option value="0">Select yout topping</option>
+                                    <option value="">sausage @Ksh500</option>
+                                    <option value="onion">Pepperoni @Ksh580</option>
+                                    <option value="sausage">Tomato @Ksh570</option>
+                                    <option value="mushroom">Mushroom @Ksh520</option>
+                                    <option value="onion">Onion @Ksh500</option>
+                                    <option value="Berbecue sauce">Berbecue sauce @Ksh400</option>
                                 </select>
-                                <img src="crispy.jpeg">
-                                <label>CRISPY</label>
-                                <img src="sicilian.jpeg">
-                                <label>SICILIAN</label>
-                                <img src="glutenfree.jpeg">
-                                <label>GLUTEN FREE</label>
-
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <h3>TOPPINGS</h3>
-                                        <select name="topping" class="form-control" id="toppings">
-                                            <option value="0">Select yout topping</option>
-                                            <option value="">sausage @Ksh500</option>
-                                            <option value="onion">Pepperoni @Ksh580</option>
-                                            <option value="sausage">Tomato @Ksh570</option>
-                                            <option value="mushroom">Mushroom @Ksh520</option>
-                                            <option value="onion">Onion @Ksh500</option>
-                                            <option value="Berbecue sauce">Berbecue sauce @Ksh400</option>
-                                        </select>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div id="delivered">
-                                <h3>ADDRESS</h3>
+                    <div id="delivered">
+                        <h3>ADDRESS</h3>
 
-                                <input type="text" class="form-control" name="Estate" id="estate"
-                                    placeholder="Estate"><br>
-                                <input type="text" class="form-control" name="PhoneNumber" id="phoneNumber"
-                                    placeholder="Phone Number"><br>
-                            </div>
-                            <button type="submit" id="submit" class="btn btn-outline-success"
-                                value="checkout">Checkout</button>
-                            <button type="submit" id="submit" class="btn btn-warning" value="Submit">ORDER
-                                ANOTHER</button>
+                        <input type="text" class="form-control" name="Estate" id="estate" placeholder="Estate"><br>
+                        <input type="text" class="form-control" name="PhoneNumber" id="phoneNumber"
+                            placeholder="Phone Number"><br>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-outline-success" value="checkout">Checkout</button>
+                    <button type="submit" id="submit" class="btn btn-warning" value="Submit">ORDER
+                        ANOTHER</button>
                 </form>
             </div>
         </div>
 
 
     </div>
-    
+
 </body>
 
 </html>
