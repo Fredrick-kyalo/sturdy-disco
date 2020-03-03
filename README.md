@@ -5,9 +5,8 @@
 {This is website of a pizza company which allows the user to order pizza and get them delivered.The user has also an option of ordering another. }
 ## Setup/Installation Requirements
 *create a project directory
-*
-
-
+*Go to https://github.com/Fredrick-kyalo/sturdy-disco/
+*Clone the repository in the folder.
 ## Technologies Used
 { I used HTML and CSS. JavaScript was utilised.}
 
