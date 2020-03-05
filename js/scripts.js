@@ -58,7 +58,7 @@ $(document).ready(function () {
             case "Large":
                 price = 1000;
             default:
-                alert("please choose a pizza size");
+                console.log("invalid");
         };
 
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
             case "Gluten-free":
                 c_price = 500;
             default:
-                alert("eeeh wait a bit choose a crust");
+                console.log("eeeh wait a bit choose a crust");
         };
 
         topping_value = pToppings.length * 100;
